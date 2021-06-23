@@ -1,0 +1,23 @@
+{
+  "name": "typescript-practice",
+  "version": "1.0.0",
+  "description": "Practicing TS syntax with basic network requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snsebro/typescript-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snsebro/typescript-practice/issues"
+  },
+  "homepage": "https://github.com/snsebro/typescript-practice#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
