@@ -1,8 +1,13 @@
-import { User } from './User';
-import { Company } from './Company';
+// import { User } from './User';
+// import { Company } from './Company';
 
-const user = new User()
-const company = new Company()
+new google.maps.Map(document.getElementById('map'), {
+    center: {
+        lat: 12, 
+        lng: 12
+    },
+    zoom: 5,
+    zoomControl: true,
+    draggable: true,
+});
 
-console.log(user)
-console.log(company)
