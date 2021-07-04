@@ -1,7 +1,9 @@
-interface Location {
-    lat: number;
-    lng: number;
-}
+interface Marker {
+    location: {
+        lat: number;
+        lng: number;
+    };
+};
 
 export class CustomMap {
     constructor(mapDivId: string){
@@ -14,20 +16,19 @@ export class CustomMap {
             zoomControl: true,
             draggable: true,
         });
-    }
+    };
 
     private googleMap: google.maps.Map;
 
     googleMarker: google.maps.Marker;
 
-    createMarker(location: Location): google.maps.Marker {
+    createMarker(marker: Marker): google.maps.Marker {
         return new google.maps.Marker({
             position: {
-                lat: location.lat,
-                lng: location.lng
+                lat: marker.location.lat,
+                lng: marker.location.lng
             },
             map: this.googleMap
-        })
-    }
-
-}
+        });
+    };
+};
