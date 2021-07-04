@@ -136909,7 +136909,7 @@ exports.CustomMap = void 0;
 var CustomMap =
 /** @class */
 function () {
-  function CustomMap(userLocation, companyLocation) {
+  function CustomMap() {
     this.googleMap = new google.maps.Map(document.getElementById('map'), {
       center: {
         lat: 0,
@@ -136918,13 +136918,7 @@ function () {
       zoom: 2,
       zoomControl: true,
       draggable: true
-    }); // this.googleMarker = new google.maps.Marker({
-    //     position: {
-    //         lat: 0,
-    //         lng: 0
-    //     },
-    //     map: this.googleMap
-    // });
+    });
   }
 
   CustomMap.prototype.createMarker = function (location) {
@@ -137021,7 +137015,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50351" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52199" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
